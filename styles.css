@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #000000;
+}
+
+/* Hero Section */
+header {
+  background: hsl(0, 98%, 18%);
+  color: white;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+/* About Section */
+#about {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Proyek Section */
+#projects {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+}
+
+/* Project Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.project-card {
+  flex: 1 1 300px; /* Ini kunci agar responsif */
+  max-width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #114115;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #0a0078;
+  margin-bottom: 20px;
+}
+
+.project-card .btn {
+  padding: 10px 20px;
+  background-color: #160e52;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #001a71;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px;
+  text-align: center;
+}
+
+#contact img {
+  width: 20px; /* Ukuran lebar ikon */
+  height: auto; /* Ukuran tinggi ikon, agar proporsional */
+  vertical-align: middle; /* Menyelaraskan ikon dengan teks */
+  margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
+/* Footer */
+footer {
+  background-color: #790151;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
